@@ -6,18 +6,19 @@ plugins {
 
 android {
     namespace 'com.example.tmdbclient'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.tmdbclient"
         minSdk 23
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         buildConfigField "String","API_KEY","\"db6d76d00c25b7c95090b05858e4b6e3\""
+        buildConfigField "String","BASE_URL","\"https://api.themoviedb.org/3/\""
     }
 
     buildTypes {
