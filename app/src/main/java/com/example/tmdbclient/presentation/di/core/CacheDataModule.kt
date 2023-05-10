@@ -1,5 +1,6 @@
 package com.example.tmdbclient.presentation.di.core
 
+import com.example.tmdbclient.data.repository.artist.dataSource.ArtistCacheDataSource
 import com.example.tmdbclient.data.repository.artist.dataSourceImpl.ArtistCacheDataSourceImpl
 import com.example.tmdbclient.data.repository.movie.dataSource.MovieCacheDataSource
 import com.example.tmdbclient.data.repository.movie.dataSourceImpl.MovieCacheDataSourceImpl
@@ -25,7 +26,7 @@ class CacheDataModule {
 
     @Singleton
     @Provides
-    fun provideArtistCacheDataSource(): ArtistCacheDataSourceImpl {
+    fun provideArtistCacheDataSource(): ArtistCacheDataSource {
         return ArtistCacheDataSourceImpl()
     }
 }
